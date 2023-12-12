@@ -1,8 +1,8 @@
-module github.com/minio/minio-go/examples/minio
+module github.com/lgj101/minio-go/examples/minio
 
 go 1.17
 
-require github.com/minio/minio-go/v7 v7.0.49
+require github.com/lgj101/minio-go/v7 v7.0.49
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect
@@ -23,4 +23,4 @@ require (
 	gopkg.in/ini.v1 v1.67.0 // indirect
 )
 
-replace github.com/minio/minio-go/v7 v7.0.49 => ../..
+replace github.com/lgj101/minio-go/v7 v7.0.49 => ../..
