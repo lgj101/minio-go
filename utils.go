@@ -159,9 +159,9 @@ func isValidEndpointURL(endpointURL url.URL) error {
 	if endpointURL == sentinelURL {
 		return errInvalidArgument("Endpoint url cannot be empty.")
 	}
-	if endpointURL.Path != "/" && endpointURL.Path != "" {
-		return errInvalidArgument("Endpoint url cannot have fully qualified paths.")
-	}
+	//if endpointURL.Path != "/" && endpointURL.Path != "" {
+	//	return errInvalidArgument("Endpoint url cannot have fully qualified paths.")
+	//}
 	host := endpointURL.Hostname()
 	if !s3utils.IsValidIP(host) && !s3utils.IsValidDomain(host) {
 		msg := "Endpoint: " + endpointURL.Host + " does not follow ip address or domain name standards."
